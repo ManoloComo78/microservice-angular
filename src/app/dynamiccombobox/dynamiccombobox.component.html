@@ -1,0 +1,32 @@
+<mat-card>
+
+  <mat-icon class="close-icon" color="warn">close</mat-icon>
+
+  <mat-card-subtitle>Users n°{{numberList}}</mat-card-subtitle>
+
+  <mat-card-content>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Favorite user</mat-label>
+      <mat-select name="user" [(ngModel)]="selectedUser">
+        <mat-option *ngFor="let user of users" [value]="user.value">
+          {{user.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <p>Selected user: {{selectedUser}}</p>
+
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-button>Clear</button>
+    <button mat-button>Reload</button>
+  </mat-card-actions>
+
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+
+</mat-card>
+

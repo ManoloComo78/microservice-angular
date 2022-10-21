@@ -11,13 +11,20 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatListModule} from "@angular/material/list";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatIconModule} from "@angular/material/icon";
+import { DynamiccomboboxComponent } from './dynamiccombobox/dynamiccombobox.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from "@angular/material/select";
+import {MatCardModule} from "@angular/material/card";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DynamiccomboboxComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +34,12 @@ import {MatIconModule} from "@angular/material/icon";
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatCardModule,
+    MatProgressBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
