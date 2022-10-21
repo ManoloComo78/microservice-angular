@@ -11,7 +11,7 @@ interface User {
   styleUrls: ['./dynamiccombobox.component.scss']
 })
 export class DynamiccomboboxComponent implements OnInit {
-  selectedUser: string | undefined; //TODO
+  selectedUser: string = "none";
   numberList: number | undefined; //TODO
 
   users: User[] = [

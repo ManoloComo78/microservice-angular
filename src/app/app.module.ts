@@ -39,7 +39,8 @@ import {FormsModule} from "@angular/forms";
     MatSelectModule,
     MatCardModule,
     MatProgressBarModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
