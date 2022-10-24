@@ -18,12 +18,10 @@ export class SidemenuComponent implements OnInit {
     {value: 1, viewValue: '1'},
     {value: 5, viewValue: '5'},
     {value: 10, viewValue: '10'},
-    {value: 100, viewValue: '100'},
-    {value: 1000, viewValue: '1000'},
+    {value: 20, viewValue: '20'},
   ];
 
   elementNumbers: Element[] = [
-    {value: 1, viewValue: '1'},
     {value: 3, viewValue: '3'},
     {value: 5, viewValue: '5'},
     {value: 10, viewValue: '10'},
