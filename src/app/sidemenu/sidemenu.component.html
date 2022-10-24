@@ -1,0 +1,22 @@
+<form [formGroup]="form" (ngSubmit)="saveDetails(form)">
+
+  <mat-label>Number of Elements</mat-label>
+  <mat-radio-group formControlName="elementNumber">
+    <mat-radio-button *ngFor="let elementNumber of elementNumbers" [value]="elementNumber.value">{{elementNumber.viewValue}}</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-label>Number of ComboBox</mat-label>
+  <mat-radio-group formControlName="comboBoxNumber">
+    <mat-radio-button *ngFor="let comboBoxNumber of comboBoxNumbers" [value]="comboBoxNumber.value">{{comboBoxNumber.viewValue}}</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-label>Call Type</mat-label>
+  <mat-radio-group formControlName="callType">
+    <mat-radio-button *ngFor="let callType of callTypes" [value]="callType.value">{{callType.viewValue}}</mat-radio-button>
+  </mat-radio-group>
+
+  <div mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Reload</button>
+  </div>
+</form>
+<div>{{ form.value | json }}</div>

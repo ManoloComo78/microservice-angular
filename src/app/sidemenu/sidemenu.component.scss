@@ -1,0 +1,16 @@
+@import "./../../variables.scss";
+
+mat-label {
+  display: block;
+  margin: 20px 0 10px 0;
+  color: $label-color;
+}
+
+mat-radio-button {
+  display: block;
+
+
+}
+.mat-radio-label {
+  marging: 0 0 10px 0;
+}

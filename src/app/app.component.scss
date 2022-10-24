@@ -1,6 +1,16 @@
+@import "./../variables.scss";
+
 .container {
 
 }
 mat-drawer {
   padding: 10px;
+}
+
+mat-drawer-container {
+  height: $main-height;
+}
+
+mat-drawer {
+  width: $side-width;
 }
