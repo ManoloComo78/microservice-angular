@@ -10,6 +10,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import {NgMaterialModule} from "./ng-material/ng-material.module";
 import { DynamicSelectComponent } from './dynamic-select/dynamic-select.component';
+import { DynamicSelectContainerComponent } from './dynamic-select-container/dynamic-select-container.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DynamicSelectComponent } from './dynamic-select/dynamic-select.componen
     HeaderComponent,
     FooterComponent,
     SidemenuComponent,
-    DynamicSelectComponent
+    DynamicSelectComponent,
+    DynamicSelectContainerComponent
   ],
   imports: [
     BrowserModule,
