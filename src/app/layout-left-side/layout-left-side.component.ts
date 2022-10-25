@@ -7,11 +7,11 @@ interface Element {
 }
 
 @Component({
-  selector: 'app-sidemenu',
-  templateUrl: './sidemenu.component.html',
-  styleUrls: ['./sidemenu.component.scss']
+  selector: 'app-layout-left-side',
+  templateUrl: './layout-left-side.component.html',
+  styleUrls: ['./layout-left-side.component.scss']
 })
-export class SidemenuComponent implements OnInit {
+export class LayoutLeftSideComponent implements OnInit {
   form: FormGroup = new FormGroup({});
 
   comboBoxNumbers: Element[] = [
