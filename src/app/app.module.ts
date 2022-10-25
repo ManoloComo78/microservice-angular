@@ -6,10 +6,10 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
-import { DynamiccomboboxComponent } from './dynamiccombobox/dynamiccombobox.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import {NgMaterialModule} from "./ng-material/ng-material.module";
+import { DynamicSelectComponent } from './dynamic-select/dynamic-select.component';
 
 
 @NgModule({
@@ -17,8 +17,8 @@ import {NgMaterialModule} from "./ng-material/ng-material.module";
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DynamiccomboboxComponent,
-    SidemenuComponent
+    SidemenuComponent,
+    DynamicSelectComponent
   ],
   imports: [
     BrowserModule,

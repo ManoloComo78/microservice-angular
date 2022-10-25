@@ -6,11 +6,11 @@ interface User {
 }
 
 @Component({
-  selector: 'app-dynamiccombobox',
-  templateUrl: './dynamiccombobox.component.html',
-  styleUrls: ['./dynamiccombobox.component.scss']
+  selector: 'app-dynamic-select',
+  templateUrl: './dynamic-select.component.html',
+  styleUrls: ['./dynamic-select.component.scss']
 })
-export class DynamiccomboboxComponent implements OnInit {
+export class DynamicSelectComponent implements OnInit {
   selectedUser: string = "none";
   numberList: number | undefined; //TODO
 
@@ -19,7 +19,6 @@ export class DynamiccomboboxComponent implements OnInit {
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'},
   ];
-
   constructor() { }
 
   ngOnInit(): void {
