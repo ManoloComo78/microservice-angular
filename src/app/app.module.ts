@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgMaterialModule} from "./ng-material/ng-material.module";
 import {DynamicSelectComponent} from './dynamic-select/dynamic-select.component';
 import {DynamicSelectContainerComponent} from './dynamic-select-container/dynamic-select-container.component';
+import {DynamicDirective} from "./dynamic.directive";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {DynamicSelectContainerComponent} from './dynamic-select-container/dynami
     LayoutFooterComponent,
     LayoutLeftSideComponent,
     DynamicSelectComponent,
-    DynamicSelectContainerComponent
+    DynamicSelectContainerComponent,
+    DynamicDirective
   ],
   imports: [
     BrowserModule,
