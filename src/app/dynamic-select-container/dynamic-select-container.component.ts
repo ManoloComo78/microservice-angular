@@ -1,7 +1,6 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core';
-import {ModelSelect} from "../model-select";
-import {DynamicDirective} from "../dynamic.directive";
-import {DynamicComponent} from "../dynamic.component";
+import {Component, Input, OnInit} from '@angular/core';
+import {UsersSelectModel} from "../user/users-select-model";
+import {UserService} from "../user/user.service";
 
 @Component({
   selector: 'app-dynamic-select-container',
@@ -10,23 +9,11 @@ import {DynamicComponent} from "../dynamic.component";
 })
 export class DynamicSelectContainerComponent implements OnInit {
 
-  @Input() selects: ModelSelect[] = [];
+  @Input() selects: UsersSelectModel[] = [];
 
-  @ViewChild(DynamicDirective, {static: true}) adHost!: DynamicDirective;
-
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.loadComponent(1);
-  }
-
-  loadComponent(index: number) {
-    const modelSelect = this.selects[index];
-
-    const viewContainerRef = this.adHost.viewContainerRef;
-    viewContainerRef.clear();
-
-    const componentRef = viewContainerRef.createComponent<DynamicComponent>(modelSelect.component);
-    componentRef.instance.data = modelSelect.data;
+    this.selects = this.userService.getSelects();
   }
 }

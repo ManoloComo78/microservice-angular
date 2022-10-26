@@ -1,3 +1,5 @@
-<!--<app-dynamic-select></app-dynamic-select>-->
-<!--<app-dynamic-select></app-dynamic-select>-->
-<ng-template adHost></ng-template>
+<app-dynamic-select *ngFor="let select of selects"
+                    [options]="select.data"
+                    [title]="select.title"
+  [typeName]="select.typeName"
+></app-dynamic-select>
